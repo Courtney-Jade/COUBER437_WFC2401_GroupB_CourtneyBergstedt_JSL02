@@ -54,6 +54,7 @@ const updateProgressCharts = () => {
 // Function call to update on progress data
 updateProgressCharts();
 
+// User interaction. Users can switch from dark to light mode
 const toggleTheme = () => {
     document.body.classList.toggle('dark-theme');
 };
