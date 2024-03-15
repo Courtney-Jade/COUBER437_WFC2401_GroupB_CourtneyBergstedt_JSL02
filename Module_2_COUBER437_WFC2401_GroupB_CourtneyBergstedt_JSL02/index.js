@@ -19,11 +19,10 @@ const addNewGoal = () => {
     const goalInput = document.querySelector('#goalInput').value;
     const goalList = document.querySelector('#goalList');
     
-       // These lines of code checks for any duplicates
-    const existingGoals = Array.from(goalList.children).map(li => li.textContent.trim());
-    if (existingGoals.includes(goalInput())) {
-        alert("Goal already exists!");
-        return;  // This will exit the function if it is a duplicate
+      const existingGoals = Array.from(goalList.children).map(li => li.textContent.trim());
+      if (existingGoals.includes(goalInput.trim())) { 
+            alert('This goal already exists!');
+            return;
     }
     
     const newGoal = document.createElement('li');
